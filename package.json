@@ -1,0 +1,25 @@
+{
+    "name": "headless-chrome-test",
+    "version": "1.0.0",
+    "homepage": "https://github.com/eq-inc/headless-chrome-test",
+    "license": "Apache-2.0",
+    "author": "Kazuma Fujimaki <fujimaki@eq-inc.jp>",
+    "main": "test.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/eq-inc/headless-chrome-test.git"
+    },
+    "scripts": {
+        "chrome": "nohup chromium-browser --headless --disable-gpu --remote-debugging-port=9222 --window-size='1024x768' &",
+        "test": "./node_modules/.bin/mocha --no-timeouts ./test.js"
+    },
+    "dependencies": {
+        "cheerio": "^1.0.0-rc.2",
+        "chrome-remote-interface": "^0.23.3",
+        "expect.js": "^0.3.1",
+        "mocha": "^3.4.2"
+    },
+    "engines": {
+        "node": ">=7.6.0"
+    }
+}

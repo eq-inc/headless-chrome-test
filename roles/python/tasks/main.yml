@@ -1,0 +1,6 @@
+- name: Update apt cache
+  raw: sudo apt-get -qq update
+
+- name: Install python2.7
+  raw: sudo apt-get -qq install python2.7 python-apt
+
