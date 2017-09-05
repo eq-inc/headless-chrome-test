@@ -5,7 +5,7 @@
     update: yes
 
 - name: Install Node.js
-  command: /opt/nave/nave.sh usemain latest
+  command: /opt/nave/nave.sh usemain 8.1.3 
 
 - name: Install packages
   command: npm install --global mocha yarn
